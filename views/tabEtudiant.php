@@ -22,6 +22,8 @@
                 <th scope="col">Bourse</th>
                 <th scope="col">Numero chambre</th>
                 <th scope="col">Adresse</th>
+                <th scope="col">Modifier</th>
+                <th scope="col">Suprimmer</th>
             </tr>
         </thead>
         <tbody>
@@ -32,6 +34,8 @@
                 <td>400000</td>
                 <td>4A</td>
                 <td>NEAN</td>
+                <td><button type="button" class="btn btn-outline-info">modifier</button></td>
+                <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
             </tr>
             <tr class="table-light">
                 <td>Moussa</td>
@@ -40,6 +44,8 @@
                 <td>20000</td>
                 <td>NEAN</td>
                 <td>Centenaire</td>
+                <td><button type="button" class="btn btn-outline-info">modifier</button></td>
+                <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
             </tr>
         </tbody>
 </table>
