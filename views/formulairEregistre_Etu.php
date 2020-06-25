@@ -16,15 +16,16 @@
       <div class="col-lg-12">
 					<div class="login_form_inner register_form_inner">
 						<h3>Enregistre etudiant</h3>
-						<form class="row login_form" action="#/" id="register_form" >
+						<form class="row login_form" method="post" action = ""   id="register_form" >
+							<input type="hidden" name="className" value="Etudiants">
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+								<input type="text" class="form-control" id="name" value="abd" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
 								</div>
 								<div class="col-md-12 form-group">
-													<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+									<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
 								</div>
 								<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
@@ -36,7 +37,7 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="button button-register w-100">Register</button>
+								<button type="submit" value="submit" name="saveEtu" class="button button-register w-100">Register</button>
 							</div>
 						</form>
 					</div>
