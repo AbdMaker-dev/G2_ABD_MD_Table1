@@ -16,7 +16,8 @@
       <div class="col-lg-12">
 					<div class="login_form_inner register_form_inner">
 						<h3>Enregistre etudiant</h3>
-						<form>
+						<form action="" method="post">
+						    <input type="hidden" name="className" value="Etudiants">
 						    <div class="form-group">
 								<input type="text" class="form-control" id="inputAddress2" placeholder="Matrcule">
 							</div>
@@ -75,7 +76,7 @@
 							</div>
 
 							<div class="form-group">
-								<input type="submit" class="form-control btn btn-primary" value="Enregistrer">
+								<input type="submit" name="saveEtu" class="form-control btn btn-primary" value="Enregistrer">
 							</div>
 							</form>
 					</div>

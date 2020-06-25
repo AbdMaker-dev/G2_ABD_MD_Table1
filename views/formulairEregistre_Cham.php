@@ -13,35 +13,34 @@
         </button>
       </div>
       <div class="modal-body">
-      <div class="col-lg-12">
+           <div class="col-lg-12">
 					<div class="login_form_inner register_form_inner">
 						<h3>Enregistre chambre</h3>
-						<form class="row login_form" action="" method="post" id="register_form" >
+						<form action="" method="post">
 						    <input type="hidden" name="className" value="Chambres">
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" value="Chambre 1" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="inputEmail4" placeholder="Numero chambre">
 								</div>
-								<div class="col-md-12 form-group">
-													<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-								</div>
-								<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Numero Batiment">
 								</div>
 							</div>
-							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" name="saveCham" class="button button-register w-100">Register</button>
+							<div class="form-row">
+								<div class="form-group col-md-6">								
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>Type de chambre</option>
+									<option value="1">individuel</option>
+									<option value="2">deux</option>
+								</select>
+								</div>
 							</div>
-						</form>
+							<div class="form-group">
+								<input type="submit" name="saveCham" class="form-control btn btn-primary" value="Enregistrer">
+							</div>
+							</form>
 					</div>
-				</div>
+			</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
