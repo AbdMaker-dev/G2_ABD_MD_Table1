@@ -16,30 +16,68 @@
       <div class="col-lg-12">
 					<div class="login_form_inner register_form_inner">
 						<h3>Enregistre etudiant</h3>
-						<form class="row login_form" method="post" action = ""   id="register_form" >
-							<input type="hidden" name="className" value="Etudiants">
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" value="abd" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+						<form>
+						    <div class="form-group">
+								<input type="text" class="form-control" id="inputAddress2" placeholder="Matrcule">
 							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="inputEmail4" placeholder="Nom">
 								</div>
-								<div class="col-md-12 form-group">
-									<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-								</div>
-								<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="inputPassword4" placeholder="Prenom">
 								</div>
 							</div>
-							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" name="saveEtu" class="button button-register w-100">Register</button>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+								<input type="email" class="form-control" id="inputEmail4" placeholder="Telephone">
+								</div>
+								<div class="form-group col-md-6">
+								<input type="date" class="form-control" id="inputPassword4" placeholder="Prenom">
+								</div>
 							</div>
-						</form>
+							<div class="form-group">
+								<input type="email" class="form-control" id="inputAddress2" placeholder="Email">
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">								
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>Type d'etudiant</option>
+									<option value="1">Boursier</option>
+									<option value="2">Non Boursier</option>
+								</select>
+								</div>
+								<div class="form-group col-md-6">
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>Type Bourse</option>
+									<option value="1">pension-complète : 40000 fr</option>
+									<option value="2">demi-bourse : 20000 fr</option>
+								</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">								
+									<div class="form-check form-check-inline">
+										<label class="form-check-label" for="inlineRadio3">Loge ? </label> 
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+										<label class="form-check-label" for="inlineRadio1">OUI</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+										<label class="form-check-label" for="inlineRadio2">NON</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<input type="submit" class="form-control btn btn-primary" value="Enregistrer">
+							</div>
+							</form>
 					</div>
 				</div>
       </div>
