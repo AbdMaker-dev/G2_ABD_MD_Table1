@@ -16,16 +16,30 @@
 <table class="table table-hover">
         <thead>
             <tr>
-                <th scope="col">Column heading</th>
-                <th scope="col">Column heading</th>
-                <th scope="col">Column heading</th>
+                <th scope="col">Prenom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Matricule</th>
+                <th scope="col">Bourse</th>
+                <th scope="col">Numero chambre</th>
+                <th scope="col">Adresse</th>
             </tr>
         </thead>
         <tbody>
             <tr class="table-light">
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
+                <td>Alioune Badara</td>
+                <td>Diouf</td>
+                <td>207 HVG 400</td>
+                <td>400000</td>
+                <td>4A</td>
+                <td>NEAN</td>
+            </tr>
+            <tr class="table-light">
+                <td>Moussa</td>
+                <td>Tine</td>
+                <td>305 HVG 400</td>
+                <td>20000</td>
+                <td>NEAN</td>
+                <td>Centenaire</td>
             </tr>
         </tbody>
 </table>
