@@ -2,7 +2,7 @@
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand logo_h" href="http://localhost/git/G2_ABD_MD_Table1/admin/etudiants"><img src="../assets/img/mor3.png" alt="logo"></a>
+          <a class="navbar-brand logo_h" href="http://localhost/git/G2_ABD_MD_Table1/admin/etudiants"><img src="<?=ROOT?>assets/img/mor3.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
