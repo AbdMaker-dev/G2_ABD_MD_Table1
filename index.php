@@ -23,4 +23,6 @@
     }
     }
 
+    echo "bonjour"
+
 ?>
