@@ -11,12 +11,12 @@
 
         public function etudiants()
         {
-            echo 'liste etudiants' ;
+           $this->render('tabEtudiant');
         }
 
         public function chambres()
         {
-            echo 'liste chambres' ;
+            $this->render('tabChambre');
         }
     }
 

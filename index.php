@@ -1,8 +1,10 @@
 <?php 
+     define('ROOT', str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
      require_once('Controlers/controlerParrent.php') ;
     
     // save etudiant ou chambre
-    if (isset($_POST['saveEtu']) || isset($_POST['saveCham'])){
+    if (isset($_POST['saveEtu']) || isset($_POST['saveCham']))
+    {
         require_once('Controlers/AdminControler.php') ;
         $controler = new AdminControler() ;
         $controler->setClassName($_POST['className']);
@@ -18,7 +20,6 @@
         $controler = new $controler() ;
         $action = method_exists($controler,$params[1]) ? $params[1] : "error" ;
         $controler->$action() ;
-        include('views/layouts/default.php') ;
     }
     }
 

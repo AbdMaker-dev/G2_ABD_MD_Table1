@@ -19,7 +19,7 @@
                   <div class="cart_inner">
                       <div class="table-responsive">
                           <!--================ Contenue de la page =================-->
-                          <?php include_once('views/tabEtudiant.php'); ?>
+                          <?php echo $contues ; ?>
                       </div>
                   </div>
               </div>
