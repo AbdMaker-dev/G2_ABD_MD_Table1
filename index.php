@@ -1,1 +1,4 @@
-<?php include_once('views/layouts/default.php'); ?>
+<?php include_once('views/layouts/default.php'); 
+  
+  echo "Bonjour" ;
+?>
