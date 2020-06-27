@@ -11,7 +11,9 @@
 
     // save etudiant ou chambre
     if (isset($_POST['saveEtu']) || isset($_POST['saveCham']))
+    
     {
+        var_dump($_POST);
         $params = explode('/',$_GET['url']) ;
         $controler = getControler($params[0]) ;
         $controler->enregistre($_POST) ;
