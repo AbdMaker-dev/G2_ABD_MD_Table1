@@ -3,15 +3,26 @@
     class AdminControler extends controlerParrent
     {
         
-        public function enregistre($name)
+        public function enregistre($objet)
         {
-            echo $this->className .'<br>';
-            echo 'enregistrement de ' . $name ;
+            
+            if ($objet['typeEtu']=='b') {
+                $this->className ='EtudiantsBoursier';
+            }else{
+                $this->className ='EtudiantsNonBoursier';
+            }
+           // 0 inclusiom du medel
+           // 1 cree un objet etudiant
+           $this->loadModel($this->className,$objet) ;
+           // 2 appel methode add() 
+           $this->model->add() ;
         }
 
         public function etudiants()
         {
-           $this->render('tabEtudiant');
+            $this->loadModel("EtudiantsBoursier") ;
+            $datas =  $this->model->getAll();
+            $this->render('tabEtudiant',compact('datas'));
         }
 
         public function chambres()

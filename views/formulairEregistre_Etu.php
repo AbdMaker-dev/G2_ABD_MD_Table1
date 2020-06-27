@@ -18,63 +18,63 @@
 						<h3>Enregistre etudiant</h3>
 						<form action="" method="post">
 						    <input type="hidden" name="className" value="Etudiants">
-						    <div class="form-group">
-								<input type="text" class="form-control" id="inputAddress2" placeholder="Matrcule">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" name="nom" id="inputEmail4" placeholder="Nom">
+								</div>
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" name="prenom" id="inputPassword4" placeholder="Prenom">
+								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-md-6">
-								<input type="text" class="form-control" id="inputEmail4" placeholder="Nom">
+								<input type="tel" class="form-control" name="tel" id="inputEmail4" placeholder="Telephone">
 								</div>
 								<div class="form-group col-md-6">
-								<input type="text" class="form-control" id="inputPassword4" placeholder="Prenom">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-								<input type="email" class="form-control" id="inputEmail4" placeholder="Telephone">
-								</div>
-								<div class="form-group col-md-6">
-								<input type="date" class="form-control" id="inputPassword4" placeholder="Prenom">
+								<input type="date" class="form-control" name="dateNaiss" id="inputPassword4" placeholder="Prenom">
 								</div>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="inputAddress2" placeholder="Email">
+								<input type="email" class="form-control" name="email" id="inputAddress2" placeholder="Email">
 							</div>
 
 							<div class="form-row">
 								<div class="form-group col-md-6">								
-								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								<select class="custom-select mr-sm-2" name="typeEtu" id="inlineFormCustomSelect">
 									<option selected>Type d'etudiant</option>
-									<option value="1">Boursier</option>
-									<option value="2">Non Boursier</option>
+									<option value="b">Boursier</option>
+									<option value="n-b">Non Boursier</option>
 								</select>
 								</div>
 								<div class="form-group col-md-6">
-								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-									<option selected>Type Bourse</option>
-									<option value="1">pension-complète : 40000 fr</option>
-									<option value="2">demi-bourse : 20000 fr</option>
+								<select class="custom-select mr-sm-2" name="bourse" id="inlineFormCustomSelect">
+									<option value="NEAN" selected>Type Bourse</option>
+									<option value="40000">pension-complète : 40000 fr</option>
+									<option value="20000">demi-bourse : 20000 fr</option>
 								</select>
 								</div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
 							</div>
 
 							<div class="form-row">
 								<div class="form-group col-md-6">								
 									<div class="form-check form-check-inline">
 										<label class="form-check-label" for="inlineRadio3">Loge ? </label> 
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-										<label class="form-check-label" for="inlineRadio1">OUI</label>
+										<input class="form-check-input" type="radio" name="loge" value="oui" id="inlineRadio1" value="option1">
+										<label class="form-check-label" for="inlineRadio1">OUI</label><br>
+										
 									</div>
 									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+										<input class="form-check-input" type="radio" name="loge" value="non" id="inlineRadio2" value="option2">
 										<label class="form-check-label" for="inlineRadio2">NON</label>
 									</div>
 								</div>
 							</div>
-
+							<div class="form-group">
+								<input type="text" class="form-control" name="num_log" id="inputAddress" placeholder="numero logement">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="adresse" id="inputAddress" placeholder="Adresse">
+							</div>
 							<div class="form-group">
 								<input type="submit" name="saveEtu" class="form-control btn btn-primary" value="Enregistrer">
 							</div>

@@ -22,31 +22,29 @@
                 <th scope="col">Bourse</th>
                 <th scope="col">Numero chambre</th>
                 <th scope="col">Adresse</th>
+                <th scope="col">tel</th>
+                <th scope="col">email</th>
+                <th scope="col">date de naissance</th>
                 <th scope="col">Modifier</th>
                 <th scope="col">Suprimmer</th>
             </tr>
         </thead>
         <tbody>
+            <?php foreach($datas as $data ) : ?>
             <tr class="table-light">
-                <td>Alioune Badara</td>
-                <td>Diouf</td>
-                <td>207 HVG 400</td>
-                <td>400000</td>
-                <td>4A</td>
-                <td>NEAN</td>
+                <td><?= $data['prenom'] ; ?></td>
+                <td><?= $data['nom'] ; ?></td>
+                <td><?= $data['matricule'] ; ?></td>
+                <td><?= ($data['bourse']==0) ? "NEAN" : $data['bourse'] ; ?></td>
+                <td><?= $data['num_log'] ; ?></td>
+                <td><?= $data['adresse'] ; ?></td>
+                <td><?= $data['tel'] ; ?></td>
+                <td><?= $data['email'] ; ?></td>
+                <td><?= $data['dateNaiss'] ; ?></td>
                 <td><button type="button" class="btn btn-outline-info">modifier</button></td>
                 <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
             </tr>
-            <tr class="table-light">
-                <td>Moussa</td>
-                <td>Tine</td>
-                <td>305 HVG 400</td>
-                <td>20000</td>
-                <td>NEAN</td>
-                <td>Centenaire</td>
-                <td><button type="button" class="btn btn-outline-info">modifier</button></td>
-                <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
-            </tr>
+            <?php endforeach ; ?>
         </tbody>
 </table>
 
