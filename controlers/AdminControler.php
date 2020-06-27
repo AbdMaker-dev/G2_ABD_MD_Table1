@@ -8,8 +8,12 @@
             
             if ($objet['typeEtu']=='b') {
                 $this->className ='EtudiantsBoursier';
-            }else{
+            }else if($objet['typeEtu']=='n-b'){
                 $this->className ='EtudiantsNonBoursier';
+            }
+            else{
+                $this->className='Chambres';
+
             }
            // 0 inclusiom du medel
            // 1 cree un objet etudiant

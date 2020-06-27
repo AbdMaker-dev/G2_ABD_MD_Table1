@@ -20,15 +20,15 @@
 						    <input type="hidden" name="className" value="Chambres">
 							<div class="form-row">
 								<div class="form-group col-md-6">
-								<input type="text" class="form-control" id="inputEmail4" placeholder="Numero chambre">
+								<input type="text" class="form-control" name="numChambre" id="inputEmail4" placeholder="Numero chambre">
 								</div>
 								<div class="form-group col-md-6">
-								<input type="text" class="form-control" id="inputPassword4" placeholder="Numero Batiment">
+								<input type="text" class="form-control" name="numBatiment" id="inputPassword4" placeholder="Numero Batiment">
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-md-6">								
-								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								<select class="custom-select mr-sm-2" name="types" id="inlineFormCustomSelect">
 									<option selected>Type de chambre</option>
 									<option value="1">individuel</option>
 									<option value="2">deux</option>
