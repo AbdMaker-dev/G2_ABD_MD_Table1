@@ -1,5 +1,5 @@
 <?php
-   class Chambres extends Maneger implements InterfaceModel
+   class Chambres extends Manager implements InterfaceModel
    {
         private $id;
         private $numChambre;
