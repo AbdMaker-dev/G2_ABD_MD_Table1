@@ -48,6 +48,7 @@
         $controler->etudiants();
     }
 
+    
     function getControler($pos)
     {
         $controler = ucfirst(strtolower($pos)) ;

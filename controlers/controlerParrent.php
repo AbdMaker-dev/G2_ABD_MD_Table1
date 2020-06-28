@@ -10,7 +10,7 @@
         }
         public function error()
         {
-            echo 'Error Page 404' ;
+            $this->render('errorPage');
         }
 
 
