@@ -42,10 +42,17 @@
            // 2 appel methode add() 
            var_dump($this->model->update($id,$objet)) ;
         }
-        public function etudiants()
+        public function etudiants($objet=[])
         {
             $this->loadModel("EtudiantsBoursier") ;
-            $datas =  $this->model->getAll();
+            
+            if (count($objet)>0) 
+            {
+                $datas = $this->model->getByType($objet['value'],$objet['type']) ;
+            }else
+            {
+                $datas =  $this->model->getAll();
+            }
             $this->render('tabEtudiant',compact('datas'));
         }
 

@@ -62,7 +62,14 @@
             $query->execute();
             return $query->fetch() ;
         }
-
+        public function getByType($value,$type)
+        {
+            $this->getConnection() ;
+            $sql = "SELECT * FROM " .$this->tabName . " WHERE ".$type." = '".$value."'";
+            $query = $this->connexion->prepare($sql) ;
+            $query->execute();
+            return $query->fetchAll() ;
+        }
         public function update($id,$objet)
         {
             var_dump(intval($id)) ;

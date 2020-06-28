@@ -19,7 +19,7 @@
             $controler->saveModification($params[2],$_POST) ;    
         }else if(isset($_POST['rech']))
         {
-            $controler->recheche($_POST['recherche'],$_POST['type']);
+            $controler->etudiants(['value'=>$_POST['recherche'],'type'=>$_POST['type']]);
         }
         else
         {
