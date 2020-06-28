@@ -42,7 +42,7 @@
                 <td><?= $data['email'] ; ?></td>
                 <td><?= $data['dateNaiss'] ; ?></td>
                 <td><a href="http://localhost/git/G2_ABD_MD_Table1/admin/modifier/<?= $data['id'] ; ?>" class="btn btn-outline-info">modifier</a></td>
-                <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
+                <td><a  href="http://localhost/git/G2_ABD_MD_Table1/admin/supprimer/<?= $data['id'] ; ?>" type="button" class="btn btn-outline-danger">supprimer</a></td>
             </tr>
             <?php endforeach ; ?>
         </tbody>

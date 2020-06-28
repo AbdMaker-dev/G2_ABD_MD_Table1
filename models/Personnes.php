@@ -104,6 +104,16 @@
            }
            return $code;
        }
-       
+       public function delete($id)
+       {
+        $this->getConnection() ;
+        $sql = "DELETE  FROM " .$this->tabName . " WHERE id = '".$id."'";
+        $query = $this->connexion->prepare($sql) ;
+        return $query->execute();
+        
+
+       }
+
     }
+    
 
