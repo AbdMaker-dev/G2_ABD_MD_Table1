@@ -17,10 +17,12 @@
         if (isset($_POST['saveModifEtu']) && isset($params[2])) 
         {
             $controler->saveModification($params[2],$_POST) ;    
-        }else if(isset($_POST['rech'])){
+        }else if(isset($_POST['rech']))
+        {
             $controler->recheche($_POST['recherche'],$_POST['type']);
         }
-        else{
+        else
+        {
             $controler->enregistre($_POST) ;
         }
     }
@@ -32,13 +34,16 @@
         {
             $controler =getControler($params[0]) ;
             $action = method_exists($controler,$params[1]) ? $params[1] : "error" ;
-            if (isset($params[2])) {
+            if (isset($params[2]))
+            {
                 $controler->$action($params[2]) ;    
-            }else{
+            }else
+            {
                  $controler->$action() ;
-                }
+            }
         }
-    }else{
+    }else
+    {
         $controler = getControler("admin") ;
         $controler->etudiants();
     }

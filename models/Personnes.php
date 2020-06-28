@@ -85,8 +85,8 @@
        public function generMatricule()
        {
            $anne = date('Y');
-           $CC = $this->nom[0].$this->nom[1] ;
-           $LL = $this->prenom[ (strlen($this->prenom)-1) ].$this->prenom[(strlen($this->prenom)-2)] ;
+           $CC = $this->nom[0].''.$this->nom[1] ;
+           $LL = $this->prenom[(strlen($this->prenom)-1)].$this->prenom[(strlen($this->prenom)-2)] ;
            $seri =$this->Genere_code(4) ;
            return $anne . ' ' . $CC . ' ' . $LL . ' ' . $seri;
        }
