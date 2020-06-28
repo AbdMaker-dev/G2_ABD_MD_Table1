@@ -20,7 +20,7 @@
 						    <input type="hidden" name="className" value="Etudiants">
 							<div class="form-row">
 								<div class="form-group col-md-6">
-								<input type="text" class="form-control" name="nom" id="inputEmail4" placeholder="Nom">
+								<input type="text" value="<?= isset($modifEtu['nom'])? $modifEtu['nom'] : "" ?>" class="form-control" name="nom" id="inputEmail4" placeholder="Nom">
 								</div>
 								<div class="form-group col-md-6">
 								<input type="text" class="form-control" name="prenom" id="inputPassword4" placeholder="Prenom">

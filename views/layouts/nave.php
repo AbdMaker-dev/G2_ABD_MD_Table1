@@ -11,8 +11,8 @@
           </button>
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-              <li class="nav-item"><a class="nav-link" href="http://localhost/git/G2_ABD_MD_Table1/admin/etudiants">Etudiants</a></li>
-              <li class="nav-item"><a class="nav-link" href="http://localhost/git/G2_ABD_MD_Table1/admin/chambres">Chambres</a></li>
+              <li class="nav-item"><a class="nav-link" href="<?=ROOT ; ?>admin/etudiants">Etudiants</a></li>
+              <li class="nav-item"><a class="nav-link" href="<?=ROOT ; ?>admin/chambres">Chambres</a></li>
             </ul>
             <ul class="nav-shop">
               <li class="nav-item"><a class="button button-header" href="#">Deconnection</a></li>

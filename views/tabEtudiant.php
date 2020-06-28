@@ -1,15 +1,15 @@
 <div>
-<form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+<form action="" method="post" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" name="recherche" type="search" placeholder="Search" aria-label="Search">
       <div class="col-auto my-1">
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+      <select name="type"class="custom-select mr-sm-2" id="inlineFormCustomSelect">
         <option selected>Choose type</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="matricule">Matrcule</option>
+        <option value="bourse">Boursier</option>
+        <option value="num_log">Logement</option>
       </select>
     </div>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <input type="submit" name="rech" class="btn btn-outline-success my-2 my-sm-0" value="Search">
 </form>
 </div>
 <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModalLong">+</button>
@@ -41,7 +41,7 @@
                 <td><?= $data['tel'] ; ?></td>
                 <td><?= $data['email'] ; ?></td>
                 <td><?= $data['dateNaiss'] ; ?></td>
-                <td><button type="button" class="btn btn-outline-info">modifier</button></td>
+                <td><a href="http://localhost/git/G2_ABD_MD_Table1/admin/modifier/<?= $data['id'] ; ?>" class="btn btn-outline-info">modifier</a></td>
                 <td><button type="button" class="btn btn-outline-danger">supprimer</button></td>
             </tr>
             <?php endforeach ; ?>

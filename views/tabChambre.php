@@ -2,17 +2,19 @@
 <table class="table table-hover mt-3">
         <thead>
             <tr>
-                <th scope="col">Column heading</th>
-                <th scope="col">Column heading</th>
-                <th scope="col">Column heading</th>
+                <th scope="col">Numero chambre</th>
+                <th scope="col">Numero batiment</th>
+                <th scope="col">Type de chambre</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="table-light">
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
+            <?php foreach($datas as $data ) : ?>
+                <tr class="table-light">
+                    <td><?= $data['numChambre'] ; ?></td>
+                    <td><?= $data['numBatiment'] ; ?></td>
+                    <td><?= $data['types']==1 ? "Idividule" : "Deux" ; ?></td>
+                </tr>
+            <?php endforeach ; ?>
         </tbody>
 </table>
 
