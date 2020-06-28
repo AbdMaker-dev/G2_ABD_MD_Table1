@@ -39,7 +39,7 @@
 								<div class="form-group col-md-6">	
 								<?php $b ; $n_b ; ?>
 										<?php if($datas['bourse']!= 0){
-											  $n = "selected";
+											  $b = "selected";
 											  $n_b = "";
 										}else{
 											$b = "";
@@ -48,7 +48,7 @@
 										?>							
 								<select class="custom-select mr-sm-2" name="typeEtu" id="inlineFormCustomSelect">
 									<option>Type d'etudiant</option>
-									<option  <?=$n ; ?> value="b">Boursier</option>
+									<option  <?=$b ; ?> value="b">Boursier</option>
 									<option  <?=$n_b ; ?> value="n-b">Non Boursier</option>
 								</select>
 								</div>

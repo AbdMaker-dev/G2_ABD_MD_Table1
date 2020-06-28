@@ -65,19 +65,21 @@
 
         public function update($id,$objet)
         {
+            var_dump(intval($id)) ;
             $this->getConnection() ;
-            $sql = "UPDATE " . $this->tabName . " SET (nom=:nom,prenom=:prenom,matricule=:matricule,bourse=:bourse,adresse=:adresse,num_log=:num_log,tel=:tel,email=:email,dateNaiss=:dateNaiss) WHERE id =:id" ;
+            $sql = "UPDATE " . $this->tabName . " SET nom=:nom,prenom=:prenom,matricule=:matricule,bourse=:bourse,adresse=:adresse,num_log=:num_log,tel=:tel,email=:email,dateNaiss=:dateNaiss WHERE id =:id" ;
             $query = $this->connexion->prepare($sql) ;
+            $query->bindParam(':id',intval($id)) ;
             $query->bindParam(':nom',$objet['nom']) ;
             $query->bindParam(':prenom',$objet['prenom']) ;
             $query->bindParam(':matricule',$objet['matricule']) ;
-            $query->bindParam(':bourse',$objet['bourse']) ;
+            $query->bindParam(':bourse',intval($objet['bourse'])) ;
             $query->bindParam(':adresse',$objet['adresse']) ;
             $query->bindParam(':num_log',$objet['num_log']) ;
             $query->bindParam(':tel',$objet['tel']) ;
             $query->bindParam(':email',$objet['email']) ;
             $query->bindParam(':dateNaiss',$objet['dateNaiss']) ;
-            $query->bindParam(':id',$id) ;
+            
             return  $query->execute();
         }
 

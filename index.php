@@ -2,7 +2,7 @@
     define('ROOT', 'http://localhost/git/G2_ABD_MD_Table1/');
     //define('ROOT','');
     //define('ROOT','../../');
-
+    
     require_once('models/Manager.php');
     require_once('models/InterfaceModel.php');
     require_once('models/Personnes.php');

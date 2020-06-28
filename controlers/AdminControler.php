@@ -11,36 +11,34 @@
                 }else{
                     $this->className ='EtudiantsNonBoursier';
                 }
-           }else{
+            }else{
                 $this->className = "Chambres" ;
-            }
-            
-           // 0 inclusiom du medel
-           // 1 cree un objet etudiant
-           $this->loadModel($this->className,$objet) ;
-           // 2 appel methode add()
-           var_dump($this->model);
-           $this->model->add() ;
-           
+             }
+            // 0 inclusiom du medel
+            // 1 cree un objet etudiant
+            $this->loadModel($this->className,$objet) ;
+            // 2 appel methode add()
+            var_dump($this->model);
+            $this->model->add() ;
         }
 
         public function saveModification($id,$objet)
         {
-            var_dump($id) ;
             if(isset($objet['typeEtu'])){
-                if ($objet['typeEtu']=='b') {
+                if ($objet['typeEtu']=='b')
+                {
                     $this->className ='EtudiantsBoursier';
-                }else{
+                }else
+                {
                     $this->className ='EtudiantsNonBoursier';
                 }
-           }else{
+           }else
+           {
                 $this->className = "Chambres" ;
             }
-            var_dump($this->className);
            // 0 inclusiom du medel
            // 1 cree un objet etudiant
            $this->loadModel($this->className,$objet) ;
-           var_dump($this->model) ;
            // 2 appel methode add() 
            var_dump($this->model->update($id,$objet)) ;
         }
@@ -66,8 +64,8 @@
 
         public function recheche($value,$type)
         {
-          var_dump($value);
-          var_dump($type);
+            var_dump($value);
+            var_dump($type);
         }
     }
 
