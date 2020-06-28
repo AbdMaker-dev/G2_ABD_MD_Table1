@@ -62,6 +62,13 @@
             $datas =  $this->model->getById($id);
             $this->render('modifierEtu',compact('datas'));
         }
+        
+        public function supprimer($id)
+        {
+            $this->loadModel("EtudiantsBoursier") ;
+            $datas =  $this->model->delete($id);
+            $this->etudiants();
+        }
         public function chambres()
         {
             $this->loadModel("Chambres") ;
@@ -75,6 +82,7 @@
             var_dump($type);
         }
     }
+
 
 
 ?>
